@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>DaChat</h1>
+
+  <div id="messages">
+    <% @messages.each do |m| %>
+      <%= render 'show', { message: m } %><br>
+    <% end %>
+  </div>
+
+  <%= render 'new_message', { message: @message } %>
+</div>

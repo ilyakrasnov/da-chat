@@ -1,0 +1,6 @@
+<%= form_for message do |f| %>
+  <%= f.text_field :body %>
+  <%= f.hidden_field :user, value: user_id %>
+  <%= f.submit "Send" %>
+<% end %>
+
